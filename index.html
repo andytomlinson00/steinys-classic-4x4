@@ -1,0 +1,410 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Steiny's Classic 4x4</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Classic 4x4 driver trucks for truck enthusiasts. 615 N High St, Chillicothe, Ohio. (740) 701-4206.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap">
+<style>
+/* Layout: red-white-and-chrome dealer signage — a painted hero band with a lifted square-body, then plain sections that read like a dealer's window card. */
+:root{
+  --bg:#F3F1ED;          /* white-truck paper */
+  --surface:#FFFFFF;
+  --fg:#1B1C1F;
+  --muted:#5E5F64;
+  --line:#D8D5CF;
+  --forest:#1C1D21;      /* charcoal: tires and trim */
+  --forest-ink:#F6F4F0;
+  --gold:#D3242A;        /* GMC red, from the truck */
+  --gold-ink:#FFFFFF;
+  --rust:#B01D22;
+  --display:"Big Shoulders Display", "Oswald", "Arial Narrow", Impact, sans-serif;
+  --body:"Barlow", "Helvetica Neue", Arial, sans-serif;
+  --label:"Barlow Condensed", "Arial Narrow", sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121214; --surface:#1B1B1F; --fg:#ECEAE6; --muted:#A3A1A6; --line:#2E2E33;
+    --forest:#0B0B0D; --forest-ink:#F6F4F0; --gold:#E3363B; --gold-ink:#FFFFFF; --rust:#F0625C;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121214; --surface:#1B1B1F; --fg:#ECEAE6; --muted:#A3A1A6; --line:#2E2E33;
+  --forest:#0B0B0D; --forest-ink:#F6F4F0; --gold:#E3363B; --gold-ink:#FFFFFF; --rust:#F0625C;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--forest)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:.95;margin:0;text-wrap:balance;letter-spacing:.005em}
+.label{font-family:var(--label);text-transform:uppercase;letter-spacing:.12em;font-weight:600;font-size:.82rem}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--forest);color:var(--forest-ink);border-bottom:3px solid var(--gold)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:900;font-size:1.5rem;text-transform:uppercase;letter-spacing:.02em;text-decoration:none}
+.brand span{color:var(--gold)}
+.top nav{display:flex;gap:18px;flex-wrap:wrap}
+.top nav a{font-family:var(--label);text-transform:uppercase;letter-spacing:.1em;font-weight:600;font-size:.9rem;text-decoration:none;opacity:.85}
+.top nav a:hover{opacity:1;color:var(--gold)}
+
+/* hero */
+.hero{background:var(--forest);color:var(--forest-ink);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:32px;align-items:center;padding-block:56px 40px}
+.hero-copy{min-width:0;display:grid;gap:20px}
+.hero .label{color:var(--gold)}
+.hero h1{font-size:clamp(3rem,8vw,6.2rem);font-weight:900}
+.hero h1 em{font-style:normal;color:var(--gold);display:block}
+.hero p{margin:0;max-width:34ch;font-size:1.15rem;opacity:.92}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:1.05rem;padding:12px 20px;border-radius:3px;text-decoration:none;border:2px solid transparent;cursor:pointer;background:none;color:inherit}
+.btn-gold{background:var(--gold);color:var(--gold-ink)}
+.btn-gold:hover{filter:brightness(1.07)}
+.btn-ghost{border-color:currentColor}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.phone{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.phone-num{font-family:var(--display);font-weight:700;font-size:2rem;letter-spacing:.02em;user-select:all}
+.copy{font-family:var(--label);text-transform:uppercase;letter-spacing:.1em;font-size:.78rem;font-weight:600;padding:4px 10px;border:1px solid currentColor;border-radius:3px;background:none;color:inherit;cursor:pointer;opacity:.8}
+.copy:hover{opacity:1}
+.truck{width:100%;max-width:100%;height:auto;display:block}
+.truck .paint{fill:var(--gold)}
+.truck .stripe{fill:var(--rust)}
+.truck .dark{fill:#0E1A13}
+.truck .glass{fill:#3E5A4A}
+.truck .chrome{fill:#C9CFC6}
+.truck .ground{fill:var(--forest-ink);opacity:.18}
+.truck .well{fill:var(--forest)}
+
+.photo{margin:0;min-width:0;display:grid;gap:10px;transform:rotate(1.2deg)}
+.photo img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1400/1049;object-fit:cover;border:6px solid var(--forest-ink);border-radius:2px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.photo figcaption{color:var(--forest-ink);opacity:.75;text-align:right}
+@media (max-width:860px){.photo{transform:none}}
+/* strip */
+.strip{background:var(--gold);color:var(--gold-ink)}
+.strip ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between}
+.strip .wrap{padding-block:14px}
+.strip li{font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.95rem}
+
+/* sections */
+section.block .wrap{padding-block:72px}
+.sec-head{display:grid;gap:10px;margin-bottom:32px}
+.sec-head .label{color:var(--rust)}
+.sec-head h2{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:900}
+.lede{max-width:62ch;color:var(--muted);margin:0}
+
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:24px;display:grid;gap:10px;align-content:start}
+.card h3{font-size:1.6rem;font-weight:700}
+.card p{margin:0;color:var(--muted)}
+.card .label{color:var(--rust)}
+
+/* listings */
+.listings{display:grid;gap:24px}
+.listing{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);background:var(--surface);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.listing img{display:block;width:100%;height:100%;max-width:100%;object-fit:cover;aspect-ratio:4/3}
+.listing-body{padding:28px;display:grid;gap:18px;align-content:start;min-width:0}
+.listing-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.listing h3{font-size:clamp(1.9rem,3.6vw,2.6rem);font-weight:900}
+.listing .year{display:block;color:var(--rust);font-size:.6em;letter-spacing:.04em}
+.price{font-family:var(--display);font-weight:900;font-size:2.4rem;line-height:1;color:var(--fg);font-variant-numeric:tabular-nums}
+.specs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:3px;overflow:hidden;margin:0}
+.specs div{background:var(--bg);padding:10px 12px;display:grid;gap:2px}
+.specs dt{font-family:var(--label);text-transform:uppercase;letter-spacing:.1em;font-size:.75rem;font-weight:600;color:var(--muted)}
+.specs dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums}
+.features{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+.features li{font-family:var(--label);font-weight:600;font-size:.9rem;letter-spacing:.04em;padding:3px 10px;border:1px solid var(--line);border-radius:999px}
+.listing .note{margin:0;color:var(--muted)}
+.listing .btn-ghost{color:var(--fg)}
+.listing .btn-ghost:hover{background:var(--bg)}
+@media (max-width:860px){.listing{grid-template-columns:1fr}.listing img{height:auto}}
+@media (max-width:420px){.specs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* inventory call-out (window sticker) */
+.sticker{display:grid;grid-template-columns:1.2fr 1fr;border:2px solid var(--fg);border-radius:4px;overflow:hidden;background:var(--surface)}
+.sticker > div{padding:28px;min-width:0}
+.sticker .side{background:var(--forest);color:var(--forest-ink);display:grid;gap:16px;align-content:center}
+.sticker .side .label{color:var(--gold)}
+.sticker dl{display:grid;grid-template-columns:auto 1fr;gap:10px 20px;margin:0}
+.sticker dt{font-family:var(--label);text-transform:uppercase;letter-spacing:.1em;font-weight:600;font-size:.85rem;color:var(--muted);padding-top:2px}
+.sticker dd{margin:0;font-weight:500}
+.sticker h3{font-size:2rem;font-weight:900}
+.sticker .side p{margin:0;opacity:.9}
+
+/* reviews */
+.rating{display:flex;gap:32px;align-items:center;flex-wrap:wrap}
+.big{font-family:var(--display);font-weight:900;font-size:clamp(5rem,14vw,9rem);line-height:.85;color:var(--forest)}
+:root[data-theme="dark"] .big{color:var(--gold)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .big{color:var(--gold)}}
+.rating-copy{display:grid;gap:12px;max-width:44ch}
+.rating-copy p{margin:0;color:var(--muted)}
+.bar{height:10px;background:var(--line);border-radius:5px;overflow:hidden;max-width:360px}
+.bar i{display:block;height:100%;width:96%;background:var(--rust)}
+
+/* visit */
+.visit{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.facts{display:grid;gap:22px}
+.fact{display:grid;gap:4px}
+.fact .label{color:var(--muted)}
+.fact .val{font-family:var(--display);font-weight:700;font-size:1.9rem;text-transform:uppercase;line-height:1.05}
+.fact .note{color:var(--muted);font-size:.95rem}
+.visit .btn-ghost{color:var(--fg)}
+.visit .btn-ghost:hover{background:var(--bg)}
+.mapcard{border:2px solid var(--fg);border-radius:4px;padding:24px;display:grid;gap:14px;background:var(--bg)}
+.mapcard svg{width:100%;height:auto;display:block}
+.mapcard .road{stroke:var(--muted);stroke-width:10;fill:none;opacity:.35}
+.mapcard .main{stroke:var(--gold);stroke-width:14;fill:none}
+.mapcard .pin{fill:var(--rust)}
+.mapcard text{font-family:var(--label);font-weight:700;letter-spacing:.08em;fill:var(--fg);font-size:15px;text-transform:uppercase}
+
+footer{background:var(--forest);color:var(--forest-ink)}
+footer .wrap{padding-block:32px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer p{margin:0;opacity:.8;font-size:.95rem}
+
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:10px 16px;border-radius:3px;font-family:var(--label);letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+
+@media (max-width:860px){
+  .hero .wrap,.visit-grid,.sticker{grid-template-columns:1fr}
+  .grid3{grid-template-columns:1fr}
+  .hero .wrap{padding-block:40px 28px}
+  section.block .wrap{padding-block:52px}
+}
+@media (max-width:520px){
+  .top nav{display:none}
+  .strip ul{justify-content:flex-start}
+}
+@media (prefers-reduced-motion:no-preference){
+  .truck .body-grp{animation:idle 2.4s ease-in-out infinite}
+  @keyframes idle{0%,100%{transform:translateY(0)}50%{transform:translateY(1.5px)}}
+}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Steiny's <span>Classic 4x4</span></a>
+    <nav aria-label="Main">
+      <a href="#trucks">Trucks</a>
+      <a href="#inventory">Inventory</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div class="label">Chillicothe, Ohio · Classic 4x4 trucks</div>
+        <h1>Old iron. <em>Ready to drive.</em></h1>
+        <p>We offer classic 4x4 trucks to truck enthusiasts like you. Top-notch driver-quality trucks, and the inventory changes often.</p>
+        <div class="phone">
+          <span class="phone-num" id="phone">(740) 701-4206</span>
+          <button class="copy" type="button" data-copy="(740) 701-4206" id="copy-phone-hero">Copy</button>
+        </div>
+        <div class="ctas">
+          <a class="btn btn-gold" href="tel:+17407014206">Call Steiny</a>
+          <a class="btn btn-ghost" href="https://www.facebook.com/steinysclassic" target="_blank" rel="noopener">See today's trucks</a>
+        </div>
+      </div>
+
+      <figure class="photo">
+        <img src="images/truck-1.jpg" alt="Red and white lifted GMC 2500 Super Custom 4x4 pickup with polished wheels" width="1400" height="1049">
+        <figcaption class="label">GMC 2500 Super Custom · Steiny's Classic 4x4</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="strip" aria-label="At a glance">
+    <div class="wrap">
+      <ul>
+        <li>Classic 4x4s</li>
+        <li>Driver-quality trucks</li>
+        <li>96% recommend</li>
+        <li>615 N High St</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="block" id="trucks">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="label">What we sell</div>
+        <h2>Trucks you'll actually drive</h2>
+        <p class="lede">Steiny's specializes in classic four-wheel-drive pickups and trucks. A driver-quality truck is one built to be used: start it up, take it to town, take it off-road. Not a trailer queen that only comes out for shows.</p>
+      </div>
+      <div class="grid3">
+        <article class="card">
+          <div class="label">Classic 4x4</div>
+          <h3>Old-school four-wheel drive</h3>
+          <p>Vintage pickups and 4x4s from the era when trucks were simple, square and tough.</p>
+        </article>
+        <article class="card">
+          <div class="label">Driver quality</div>
+          <h3>Ready for the road</h3>
+          <p>Trucks picked for how they run and drive, so you can enjoy one from day one.</p>
+        </article>
+        <article class="card">
+          <div class="label">For enthusiasts</div>
+          <h3>From truck people</h3>
+          <p>Talk trucks with someone who loves them as much as you do, right here in Chillicothe.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="inventory">
+    <div class="wrap" style="padding-top:0">
+      <div class="sec-head">
+        <div class="label">Inventory</div>
+        <h2>Trucks for sale</h2>
+        <p class="lede">Call or message us about any truck below. Good ones go fast.</p>
+      </div>
+      <div class="listings">
+        <article class="listing">
+          <img src="images/truck-2.jpg" alt="Red and white 1997 Ford F-250 crew cab 4x4 in the Steiny's shop" width="720" height="540">
+          <div class="listing-body">
+            <div class="listing-top">
+              <h3><span class="year">1997</span>Ford F-250 HD XLT 4x4</h3>
+              <div class="price">$21,000</div>
+            </div>
+            <dl class="specs">
+              <div><dt>Engine</dt><dd>460 V8</dd></div>
+              <div><dt>Trans</dt><dd>Automatic</dd></div>
+              <div><dt>Miles</dt><dd>156k</dd></div>
+              <div><dt>Cab</dt><dd>Crew Cab</dd></div>
+              <div><dt>Bed</dt><dd>Short bed</dd></div>
+              <div><dt>Drive</dt><dd>4x4</dd></div>
+            </dl>
+            <p class="note">Clean, rust-free truck in its original paint, on new BFGoodrich tires.</p>
+            <ul class="features" aria-label="Features">
+              <li>Cold A/C</li><li>Power windows</li><li>Power locks</li><li>Tilt</li><li>Cruise</li><li>Factory AM/FM/cassette</li><li>Hub lockouts</li><li>Hitch</li><li>New BFGs</li>
+            </ul>
+            <div class="ctas">
+              <a class="btn btn-gold" href="tel:+17407014206">Call about this truck</a>
+              <a class="btn btn-ghost" href="https://www.facebook.com/steinysclassic" target="_blank" rel="noopener">Message on Facebook</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="more" style="padding-top:0">
+    <div class="wrap" style="padding-top:0">
+      <div class="sticker">
+        <div>
+          <div class="sec-head" style="margin-bottom:20px">
+            <div class="label">New arrivals</div>
+            <h2>Check back often</h2>
+          </div>
+          <dl>
+            <dt>Stock</dt><dd>Changes often. Good trucks don't sit long.</dd>
+            <dt>Grade</dt><dd>Top-notch driver-quality trucks</dd>
+            <dt>Price range</dt><dd>$$</dd>
+            <dt>Location</dt><dd>615 N High St, Chillicothe, OH</dd>
+          </dl>
+        </div>
+        <div class="side">
+          <div class="label">Newest trucks first</div>
+          <h3>See what's on the lot today</h3>
+          <p>New arrivals, photos and prices are posted on our Facebook page as soon as they come in.</p>
+          <div class="ctas">
+            <a class="btn btn-gold" href="https://www.facebook.com/steinysclassic" target="_blank" rel="noopener">View inventory on Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="reviews" style="padding-top:0">
+    <div class="wrap" style="padding-top:0">
+      <div class="sec-head">
+        <div class="label">Reviews</div>
+        <h2>Customers recommend Steiny's</h2>
+      </div>
+      <div class="rating">
+        <div class="big">96%</div>
+        <div class="rating-copy">
+          <div class="bar" role="img" aria-label="96 percent recommend"><i></i></div>
+          <p>96% of reviewers recommend Steiny's Classic 4x4, based on 16 reviews on Facebook.</p>
+          <div><a class="btn btn-ghost" style="color:var(--fg)" href="https://www.facebook.com/steinysclassic/reviews" target="_blank" rel="noopener">Read the reviews</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap" style="padding-block:72px">
+      <div class="visit-grid">
+        <div class="facts">
+          <div class="sec-head" style="margin-bottom:6px">
+            <div class="label" style="color:var(--rust)">Visit the lot</div>
+            <h2>Come see a truck</h2>
+          </div>
+          <div class="fact">
+            <div class="label">Address</div>
+            <div class="val">615 N High St<br>Chillicothe, OH</div>
+          </div>
+          <div class="fact">
+            <div class="label">Phone</div>
+            <div class="phone"><span class="val" style="user-select:all">(740) 701-4206</span>
+              <button class="copy" type="button" data-copy="(740) 701-4206" id="copy-phone-visit">Copy</button></div>
+          </div>
+          <div class="fact">
+            <div class="label">Hours</div>
+            <div class="val">Always open</div>
+            <div class="note">Give us a call before you come so we can have someone there to show you around.</div>
+          </div>
+          <div class="ctas">
+            <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=615+N+High+St+Chillicothe+OH" target="_blank" rel="noopener">Get directions</a>
+            <a class="btn btn-ghost" href="tel:+17407014206">Call now</a>
+          </div>
+        </div>
+        <div class="mapcard" aria-hidden="true">
+          <svg viewBox="0 0 400 280">
+            <path class="road" d="M0 70 H400"/>
+            <path class="road" d="M0 200 H400"/>
+            <path class="road" d="M90 0 V280"/>
+            <path class="road" d="M310 0 V280"/>
+            <path class="main" d="M200 0 V280"/>
+            <text x="214" y="30">N High St</text>
+            <text x="214" y="270">Downtown ↓</text>
+            <path class="pin" d="M200 96 c-16 0 -28 12 -28 28 c0 20 28 48 28 48 s28 -28 28 -48 c0 -16 -12 -28 -28 -28 z"/>
+            <circle cx="200" cy="124" r="9" fill="var(--bg)"/>
+            <text x="236" y="130">615 · Steiny's</text>
+          </svg>
+          <div class="label" style="color:var(--muted)">North High Street, Chillicothe, Ohio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top">Steiny's <span>Classic 4x4</span></a>
+    <p>615 N High St, Chillicothe, OH · (740) 701-4206 · <a href="https://www.facebook.com/steinysclassic" target="_blank" rel="noopener">Facebook</a></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" hidden>Number copied</div>
+
+<script>
+(function(){
+  var toast=document.getElementById('toast'), t;
+  function show(){toast.hidden=false;clearTimeout(t);t=setTimeout(function(){toast.hidden=true},1600)}
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var text=b.getAttribute('data-copy');
+      var fallback=function(){var el=b.previousElementSibling;if(!el)return;var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);};
+      try{navigator.clipboard.writeText(text).then(show,fallback)}catch(e){fallback()}
+    });
+  });
+})();
+</script>
+
+</body></html>
